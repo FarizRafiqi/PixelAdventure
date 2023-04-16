@@ -74,7 +74,7 @@ public class PlayerMovement : MonoBehaviour
         {
             state = MovementState.jumping;
         }
-        else if (pressedButoon == 2)
+        if (pressedButoon == 2)
         {
             state = MovementState.doubleJump;
             pressedButoon = 0;
