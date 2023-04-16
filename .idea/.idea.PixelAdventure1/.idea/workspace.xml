@@ -1,7 +1,347 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="96f37906-6573-4990-9845-84675bf48652" name="Changes" comment="" />
+    <list default="true" id="96f37906-6573-4990-9845-84675bf48652" name="Changes" comment="init project">
+      <change afterPath="$PROJECT_DIR$/Assets/Editor.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Editor/MediationAdapterDependencies.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Editor/MediationAdapterDependencies.xml.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MobileDependencyResolver.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MobileDependencyResolver/Editor.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MobileDependencyResolver/Editor/Google.IOSResolver.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MobileDependencyResolver/Editor/Google.IOSResolver.dll.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MobileDependencyResolver/Editor/Google.JarResolver.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MobileDependencyResolver/Editor/Google.JarResolver.dll.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MobileDependencyResolver/Editor/Google.VersionHandler.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MobileDependencyResolver/Editor/Google.VersionHandler.dll.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MobileDependencyResolver/Editor/Google.VersionHandlerImpl.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MobileDependencyResolver/Editor/Google.VersionHandlerImpl.dll.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MobileDependencyResolver/Editor/mobile-dependency-resolver.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MobileDependencyResolver/Editor/mobile-dependency-resolver.txt.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_0.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_0.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_1.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_1.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_10.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_10.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_100.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_100.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_101.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_101.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_102.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_102.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_103.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_103.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_104.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_104.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_105.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_105.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_106.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_106.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_107.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_107.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_108.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_108.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_109.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_109.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_11.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_11.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_110.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_110.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_111.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_111.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_112.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_112.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_113.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_113.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_114.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_114.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_115.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_115.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_116.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_116.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_117.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_117.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_118.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_118.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_119.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_119.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_12.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_12.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_120.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_120.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_121.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_121.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_122.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_122.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_123.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_123.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_124.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_124.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_125.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_125.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_126.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_126.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_127.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_127.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_128.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_128.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_129.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_129.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_13.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_13.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_130.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_130.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_131.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_131.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_132.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_132.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_133.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_133.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_134.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_134.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_135.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_135.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_136.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_136.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_137.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_137.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_138.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_138.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_139.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_139.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_14.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_14.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_140.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_140.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_141.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_141.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_142.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_142.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_143.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_143.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_15.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_15.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_16.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_16.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_17.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_17.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_18.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_18.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_19.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_19.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_2.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_2.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_20.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_20.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_21.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_21.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_22.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_22.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_23.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_23.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_24.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_24.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_25.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_25.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_26.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_26.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_27.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_27.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_28.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_28.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_29.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_29.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_3.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_3.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_30.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_30.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_31.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_31.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_32.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_32.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_33.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_33.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_34.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_34.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_35.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_35.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_36.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_36.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_37.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_37.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_38.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_38.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_39.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_39.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_4.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_4.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_40.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_40.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_41.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_41.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_42.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_42.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_43.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_43.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_44.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_44.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_45.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_45.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_46.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_46.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_47.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_47.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_48.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_48.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_49.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_49.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_5.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_5.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_50.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_50.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_51.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_51.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_52.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_52.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_53.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_53.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_54.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_54.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_55.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_55.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_56.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_56.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_57.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_57.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_58.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_58.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_59.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_59.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_6.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_6.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_60.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_60.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_61.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_61.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_62.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_62.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_63.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_63.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_64.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_64.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_65.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_65.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_66.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_66.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_67.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_67.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_68.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_68.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_69.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_69.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_7.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_7.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_70.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_70.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_71.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_71.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_72.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_72.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_73.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_73.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_74.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_74.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_75.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_75.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_76.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_76.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_77.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_77.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_78.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_78.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_79.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_79.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_8.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_8.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_80.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_80.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_81.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_81.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_82.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_82.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_83.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_83.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_84.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_84.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_85.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_85.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_86.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_86.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_87.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_87.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_88.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_88.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_89.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_89.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_9.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_9.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_90.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_90.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_91.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_91.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_92.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_92.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_93.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_93.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_94.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_94.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_95.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_95.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_96.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_96.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_97.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_97.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_98.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_98.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_99.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Tiles/TerrainTileset/Terrain Sliced (16x16)_99.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/terrain.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/terrain.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/BillingMode.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/BillingMode.json.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjectSettings/AudioManager.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjectSettings/ClusterInputManager.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjectSettings/GvhProjectSettings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjectSettings/MemorySettings.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjectSettings/NavMeshAreas.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjectSettings/PackageManagerSettings.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.services.mediation/Settings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjectSettings/Physics2DSettings.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjectSettings/PresetManager.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjectSettings/TimeManager.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjectSettings/VFXManager.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjectSettings/VersionControlSettings.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjectSettings/boot.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.PixelAdventure1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PixelAdventure1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pixel Adventure 1/Assets/Terrain/Terrain Sliced (16x16).png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pixel Adventure 1/Assets/Terrain/Terrain Sliced (16x16).png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -83,7 +423,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1681619734700</updated>
-      <workItem from="1681619737067" duration="1383000" />
+      <workItem from="1681619737067" duration="2914000" />
     </task>
     <task id="LOCAL-00001" summary="init project&#10;&#10;- base movement (on progress)">
       <created>1681620316288</created>
@@ -92,7 +432,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681620316288</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="init project">
+      <created>1681621525366</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1681621525366</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -116,6 +463,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="init project&#10;&#10;- base movement (on progress)" />
-    <option name="LAST_COMMIT_MESSAGE" value="init project&#10;&#10;- base movement (on progress)" />
+    <MESSAGE value="init project" />
+    <option name="LAST_COMMIT_MESSAGE" value="init project" />
   </component>
 </project>
