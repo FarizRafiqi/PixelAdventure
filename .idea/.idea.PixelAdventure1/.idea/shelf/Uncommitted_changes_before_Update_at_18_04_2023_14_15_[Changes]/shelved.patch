@@ -1,0 +1,128 @@
+Index: Assets/Scripts/CameraController.cs
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>using UnityEngine;\r\n\r\npublic class CameraController : MonoBehaviour\r\n{\r\n    [SerializeField] private Transform player;\r\n\r\n    // Update is called once per frame\r\n    void Update()\r\n    {\r\n        transform.position = new Vector3(player.position.x, player.position.y, transform.position.z);\r\n    }\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Assets/Scripts/CameraController.cs b/Assets/Scripts/CameraController.cs
+--- a/Assets/Scripts/CameraController.cs	(revision 73363055089e164e8490eca87382fb0dd8bc38b4)
++++ b/Assets/Scripts/CameraController.cs	(date 1681800880465)
+@@ -7,6 +7,6 @@
+     // Update is called once per frame
+     void Update()
+     {
+-        transform.position = new Vector3(player.position.x, player.position.y, transform.position.z);
++        // transform.position = new Vector3(player.position.x, player.position.y, transform.position.z);
+     }
+ }
+\ No newline at end of file
+Index: Assets/Scripts/PlayerMovement.cs
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>using UnityEngine;\r\n\r\npublic class PlayerMovement : MonoBehaviour\r\n{\r\n    private Rigidbody2D rb;\r\n    private BoxCollider2D coll;\r\n    private SpriteRenderer sprite;\r\n    private Animator anim;\r\n\r\n    [SerializeField] private LayerMask jumpableGround;\r\n\r\n    private bool doubleJump;\r\n    private int pressedButoon;\r\n    \r\n    private float dirX = 0f;\r\n    [SerializeField] private float moveSpeed = 7f;\r\n    [SerializeField] private float jumpForce = 14f;\r\n    private enum MovementState { idle, running, jumping, falling, doubleJump}\r\n    \r\n    // Start is called before the first frame update\r\n    private void Start()\r\n    {\r\n        rb = GetComponent<Rigidbody2D>();\r\n        coll = GetComponent<BoxCollider2D>();\r\n        sprite = GetComponent<SpriteRenderer>();\r\n        anim = GetComponent<Animator>();\r\n    }\r\n\r\n    // Update is called once per frame\r\n    private void Update()\r\n    {\r\n        dirX = Input.GetAxisRaw(\"Horizontal\");\r\n        rb.velocity = new Vector2(dirX * moveSpeed, rb.velocity.y);\r\n\r\n        if (Input.GetButtonDown(\"Jump\"))\r\n        {\r\n            if (IsGrounded())\r\n            {\r\n                rb.velocity = new Vector2(rb.velocity.x, jumpForce);\r\n                doubleJump = true;\r\n            }\r\n            else if (doubleJump)\r\n            {\r\n                rb.velocity = new Vector2(rb.velocity.x, jumpForce * 0.7f);\r\n                doubleJump = false;\r\n                pressedButoon = 2;\r\n            } \r\n        }\r\n        Debug.Log(pressedButoon);\r\n\r\n        UpdateAnimationState();\r\n    }\r\n\r\n    private void UpdateAnimationState()\r\n    {\r\n        MovementState state;\r\n\r\n        if (dirX > 0f)\r\n        {\r\n            state = MovementState.running;\r\n            sprite.flipX = false;\r\n        }\r\n        else if (dirX < 0f)\r\n        {\r\n            state = MovementState.running;\r\n            sprite.flipX = true;\r\n        }\r\n        else\r\n        {\r\n            state = MovementState.idle;\r\n        }\r\n\r\n        if (rb.velocity.y > .1f)\r\n        {\r\n            state = MovementState.jumping;\r\n        }\r\n        if (pressedButoon == 2)\r\n        {\r\n            state = MovementState.doubleJump;\r\n            pressedButoon = 0;\r\n        }\r\n        else if (rb.velocity.y < -.1f)\r\n        {\r\n            state = MovementState.falling;\r\n        }\r\n\r\n        anim.SetInteger(\"state\", (int)state);\r\n    }\r\n    \r\n    private bool IsGrounded()\r\n    {\r\n        return Physics2D.BoxCast(coll.bounds.center, coll.bounds.size, 0f, Vector2.down, .1f, jumpableGround);\r\n    }\r\n    \r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Assets/Scripts/PlayerMovement.cs b/Assets/Scripts/PlayerMovement.cs
+--- a/Assets/Scripts/PlayerMovement.cs	(revision 73363055089e164e8490eca87382fb0dd8bc38b4)
++++ b/Assets/Scripts/PlayerMovement.cs	(date 1681801059098)
+@@ -46,7 +46,6 @@
+                 pressedButoon = 2;
+             } 
+         }
+-        Debug.Log(pressedButoon);
+ 
+         UpdateAnimationState();
+     }
+Index: .idea/.idea.PixelAdventure1/.idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"96f37906-6573-4990-9845-84675bf48652\" name=\"Changes\" comment=\"\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/.idea.PixelAdventure1/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/.idea.PixelAdventure1/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/Assets/Pixel Adventure 1/Assets/Items/Checkpoints/Checkpoint/Checkpoint (Flag Idle)(64x64).png.meta\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/Assets/Pixel Adventure 1/Assets/Items/Checkpoints/Checkpoint/Checkpoint (Flag Idle)(64x64).png.meta\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/Assets/Scenes/SampleScene.unity\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/Assets/Scenes/SampleScene.unity\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"HighlightingSettingsPerFile\">\r\n    <setting file=\"mock://D:/BELAJAR PEMROGRAMAN/GAME/PixelAdventure1/Assets/Pixel Adventure 1/Assets/Items/Checkpoints/Checkpoint/Checkpoint (Flag Idle)(64x64).png.meta\" root0=\"SKIP_HIGHLIGHTING\" />\r\n    <setting file=\"file://$PROJECT_DIR$/Assets/Scripts/CameraController.cs\" root0=\"FORCE_HIGHLIGHTING\" />\r\n    <setting file=\"file://$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs\" root0=\"FORCE_HIGHLIGHTING\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"MetaFilesCheckinStateConfiguration\" checkMetaFiles=\"true\" />\r\n  <component name=\"ProjectId\" id=\"2OUekTi0jf6ptAJmwyrup0lzStL\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\r\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,\r\n    &quot;Discover.Launch.Via.Unity&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,\r\n    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,\r\n    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;\r\n  },\r\n  &quot;keyToStringList&quot;: {\r\n    &quot;rider.external.source.directories&quot;: [\r\n      &quot;C:\\\\Users\\\\aulia\\\\AppData\\\\Roaming\\\\JetBrains\\\\Rider2022.3\\\\resharper-host\\\\DecompilerCache&quot;,\r\n      &quot;C:\\\\Users\\\\aulia\\\\AppData\\\\Roaming\\\\JetBrains\\\\Rider2022.3\\\\resharper-host\\\\SourcesCache&quot;,\r\n      &quot;C:\\\\Users\\\\aulia\\\\AppData\\\\Local\\\\Symbols\\\\src&quot;\r\n    ]\r\n  }\r\n}</component>\r\n  <component name=\"RunManager\" selected=\"Attach to Unity Editor.Attach to Unity Editor\">\r\n    <configuration name=\"Start Unity\" type=\"RunUnityExe\" factoryName=\"Unity Executable\">\r\n      <option name=\"EXE_PATH\" value=\"C:\\Program Files\\Unity\\Hub\\Editor\\2021.3.20f1\\Editor\\Unity.exe\" />\r\n      <option name=\"PROGRAM_PARAMETERS\" value=\"-projectPath &quot;D:\\BELAJAR PEMROGRAMAN\\GAME\\PixelAdventure1&quot; -debugCodeOptimization\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"D:\\BELAJAR PEMROGRAMAN\\GAME\\PixelAdventure1\" />\r\n      <option name=\"PASS_PARENT_ENVS\" value=\"1\" />\r\n      <option name=\"USE_EXTERNAL_CONSOLE\" value=\"0\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"UnitTests (batch mode)\" type=\"RunUnityExe\" factoryName=\"Unity Executable\">\r\n      <option name=\"EXE_PATH\" value=\"C:\\Program Files\\Unity\\Hub\\Editor\\2021.3.20f1\\Editor\\Unity.exe\" />\r\n      <option name=\"PROGRAM_PARAMETERS\" value=\"-runTests -batchmode -projectPath &quot;D:\\BELAJAR PEMROGRAMAN\\GAME\\PixelAdventure1&quot; -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"D:\\BELAJAR PEMROGRAMAN\\GAME\\PixelAdventure1\" />\r\n      <option name=\"PASS_PARENT_ENVS\" value=\"1\" />\r\n      <option name=\"USE_EXTERNAL_CONSOLE\" value=\"0\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"Attach to Unity Editor &amp; Play\" type=\"UNITY_DEBUG_RUN_CONFIGURATION\" factoryName=\"UNITY_ATTACH_AND_PLAY\" show_console_on_std_err=\"false\" show_console_on_std_out=\"false\" port=\"50000\" address=\"localhost\">\r\n      <option name=\"allowRunningInParallel\" value=\"false\" />\r\n      <option name=\"listenPortForConnections\" value=\"false\" />\r\n      <option name=\"pid\" />\r\n      <option name=\"projectPathOnTarget\" />\r\n      <option name=\"selectedOptions\">\r\n        <list />\r\n      </option>\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"Attach to Unity Editor\" type=\"UNITY_DEBUG_RUN_CONFIGURATION\" factoryName=\"Unity Debug\" show_console_on_std_err=\"false\" show_console_on_std_out=\"false\" port=\"50000\" address=\"localhost\">\r\n      <option name=\"allowRunningInParallel\" value=\"false\" />\r\n      <option name=\"listenPortForConnections\" value=\"false\" />\r\n      <option name=\"pid\" />\r\n      <option name=\"projectPathOnTarget\" />\r\n      <option name=\"selectedOptions\">\r\n        <list />\r\n      </option>\r\n      <method v=\"2\" />\r\n    </configuration>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"96f37906-6573-4990-9845-84675bf48652\" name=\"Changes\" comment=\"\" />\r\n      <created>1681619734700</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1681619734700</updated>\r\n      <workItem from=\"1681619737067\" duration=\"3258000\" />\r\n      <workItem from=\"1681629285019\" duration=\"5436000\" />\r\n      <workItem from=\"1681652709224\" duration=\"798000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"init project&#10;&#10;- base movement (on progress)\">\r\n      <created>1681620316288</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1681620316288</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"init project\">\r\n      <created>1681621525366</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1681621525366</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"fix error\">\r\n      <created>1681623150604</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1681623150604</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"Membuat player movement (right, left, jump)\">\r\n      <created>1681639781209</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1681639781209</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"5\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"UnityCheckinConfiguration\" checkUnsavedScenes=\"true\" />\r\n  <component name=\"UnityProjectConfiguration\" hasMinimizedUI=\"true\" />\r\n  <component name=\"UnityUnitTestConfiguration\" currentTestLauncher=\"EditMode\" />\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <option name=\"ADD_EXTERNAL_FILES_SILENTLY\" value=\"true\" />\r\n    <option name=\"CLEAR_INITIAL_COMMIT_MESSAGE\" value=\"true\" />\r\n    <MESSAGE value=\"init project&#10;&#10;- base movement (on progress)\" />\r\n    <MESSAGE value=\"init project\" />\r\n    <MESSAGE value=\"fix error\" />\r\n    <MESSAGE value=\"Membuat player movement (right, left, jump)\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Membuat player movement (right, left, jump)\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/.idea.PixelAdventure1/.idea/workspace.xml b/.idea/.idea.PixelAdventure1/.idea/workspace.xml
+--- a/.idea/.idea.PixelAdventure1/.idea/workspace.xml	(revision 73363055089e164e8490eca87382fb0dd8bc38b4)
++++ b/.idea/.idea.PixelAdventure1/.idea/workspace.xml	(date 1681801776314)
+@@ -3,8 +3,9 @@
+   <component name="ChangeListManager">
+     <list default="true" id="96f37906-6573-4990-9845-84675bf48652" name="Changes" comment="">
+       <change beforePath="$PROJECT_DIR$/.idea/.idea.PixelAdventure1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PixelAdventure1/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Assets/Pixel Adventure 1/Assets/Items/Checkpoints/Checkpoint/Checkpoint (Flag Idle)(64x64).png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pixel Adventure 1/Assets/Items/Checkpoints/Checkpoint/Checkpoint (Flag Idle)(64x64).png.meta" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CameraController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CameraController.cs" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -12,7 +13,6 @@
+     <option name="LAST_RESOLUTION" value="IGNORE" />
+   </component>
+   <component name="HighlightingSettingsPerFile">
+-    <setting file="mock://D:/BELAJAR PEMROGRAMAN/GAME/PixelAdventure1/Assets/Pixel Adventure 1/Assets/Items/Checkpoints/Checkpoint/Checkpoint (Flag Idle)(64x64).png.meta" root0="SKIP_HIGHLIGHTING" />
+     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CameraController.cs" root0="FORCE_HIGHLIGHTING" />
+     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs" root0="FORCE_HIGHLIGHTING" />
+   </component>
+@@ -94,7 +94,8 @@
+       <updated>1681619734700</updated>
+       <workItem from="1681619737067" duration="3258000" />
+       <workItem from="1681629285019" duration="5436000" />
+-      <workItem from="1681652709224" duration="798000" />
++      <workItem from="1681652709224" duration="830000" />
++      <workItem from="1681800803595" duration="885000" />
+     </task>
+     <task id="LOCAL-00001" summary="init project&#10;&#10;- base movement (on progress)">
+       <created>1681620316288</created>
+@@ -124,7 +125,14 @@
+       <option name="project" value="LOCAL" />
+       <updated>1681639781209</updated>
+     </task>
+-    <option name="localTasksCounter" value="5" />
++    <task id="LOCAL-00005" summary="Update moving platform">
++      <created>1681654608884</created>
++      <option name="number" value="00005" />
++      <option name="presentableId" value="LOCAL-00005" />
++      <option name="project" value="LOCAL" />
++      <updated>1681654608884</updated>
++    </task>
++    <option name="localTasksCounter" value="6" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -151,6 +159,7 @@
+     <MESSAGE value="init project" />
+     <MESSAGE value="fix error" />
+     <MESSAGE value="Membuat player movement (right, left, jump)" />
+-    <option name="LAST_COMMIT_MESSAGE" value="Membuat player movement (right, left, jump)" />
++    <MESSAGE value="Update moving platform" />
++    <option name="LAST_COMMIT_MESSAGE" value="Update moving platform" />
+   </component>
+ </project>
+\ No newline at end of file
+Index: Assets/Scenes/SampleScene.unity
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Assets/Scenes/SampleScene.unity b/Assets/Scenes/SampleScene.unity
+--- a/Assets/Scenes/SampleScene.unity	(revision 73363055089e164e8490eca87382fb0dd8bc38b4)
++++ b/Assets/Scenes/SampleScene.unity	(date 1681801424540)
+@@ -3186,7 +3186,7 @@
+   far clip plane: 1000
+   field of view: 60
+   orthographic: 1
+-  orthographic size: 5
++  orthographic size: 10
+   m_Depth: -1
+   m_CullingMask:
+     serializedVersion: 2
+@@ -3210,7 +3210,7 @@
+   m_PrefabAsset: {fileID: 0}
+   m_GameObject: {fileID: 519420028}
+   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+-  m_LocalPosition: {x: -9.52, y: -2.97, z: -10}
++  m_LocalPosition: {x: 0, y: -2.97, z: -10}
+   m_LocalScale: {x: 1, y: 1, z: 1}
+   m_ConstrainProportionsScale: 0
+   m_Children: []

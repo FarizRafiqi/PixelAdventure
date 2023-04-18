@@ -3,8 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="96f37906-6573-4990-9845-84675bf48652" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PixelAdventure1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PixelAdventure1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel Adventure 1/Assets/Items/Checkpoints/Checkpoint/Checkpoint (Flag Idle)(64x64).png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pixel Adventure 1/Assets/Items/Checkpoints/Checkpoint/Checkpoint (Flag Idle)(64x64).png.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CameraController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CameraController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,7 +13,6 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock://D:/BELAJAR PEMROGRAMAN/GAME/PixelAdventure1/Assets/Pixel Adventure 1/Assets/Items/Checkpoints/Checkpoint/Checkpoint (Flag Idle)(64x64).png.meta" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CameraController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -94,7 +94,8 @@
       <updated>1681619734700</updated>
       <workItem from="1681619737067" duration="3258000" />
       <workItem from="1681629285019" duration="5436000" />
-      <workItem from="1681652709224" duration="798000" />
+      <workItem from="1681652709224" duration="830000" />
+      <workItem from="1681800803595" duration="2822000" />
     </task>
     <task id="LOCAL-00001" summary="init project&#10;&#10;- base movement (on progress)">
       <created>1681620316288</created>
@@ -124,7 +125,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681639781209</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Update moving platform">
+      <created>1681654608884</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1681654608884</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -151,6 +159,7 @@
     <MESSAGE value="init project" />
     <MESSAGE value="fix error" />
     <MESSAGE value="Membuat player movement (right, left, jump)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Membuat player movement (right, left, jump)" />
+    <MESSAGE value="Update moving platform" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update moving platform" />
   </component>
 </project>

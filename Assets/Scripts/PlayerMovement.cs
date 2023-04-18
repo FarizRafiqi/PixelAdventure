@@ -15,7 +15,7 @@ public class PlayerMovement : MonoBehaviour
     private float dirX = 0f;
     [SerializeField] private float moveSpeed = 7f;
     [SerializeField] private float jumpForce = 14f;
-    private enum MovementState { idle, running, jumping, falling, doubleJump}
+    private enum MovementState { idle, running, jumping, falling, doubleJump }
     
     // Start is called before the first frame update
     private void Start()
@@ -46,7 +46,6 @@ public class PlayerMovement : MonoBehaviour
                 pressedButoon = 2;
             } 
         }
-        Debug.Log(pressedButoon);
 
         UpdateAnimationState();
     }
